@@ -6,7 +6,7 @@ value.length=chart.length;
 
 for (var i=0;i<chart.length;i++)
 {	
-	chart[i].style.height=point[i].textContent/5+"rem";
+	
 	value[i]=point[i].textContent;
 	point[i].innerHTML="$"+point[i].textContent;
 }
@@ -14,6 +14,10 @@ for (var i=0;i<chart.length;i++)
 for (var i=0;i<chart.length;i++){
 if(Math.max(...value)==value[i])
 	break;
+}
+
+for (var j=0;j<chart.length;j++){
+chart[j].style.height=12/value[i]*value[j]+"rem";
 }
 
 chart[i].style.backgroundColor="hsl(186, 34%, 60%)";
