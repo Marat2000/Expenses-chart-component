@@ -152,10 +152,31 @@ form
 	cursor: pointer;
 }
 
-ul div:hover > .point
+li:hover > .point
 {
 opacity:1;
 transition: .4s; 
+}
+
+@media(min-width:600px)
+{
+
+main
+{
+	
+	width: 30rem;
+}
+
+.chart
+{
+	width:3rem;
+}
+
+.point
+{
+	width: 3.7rem;
+}
+
 }
 
 
